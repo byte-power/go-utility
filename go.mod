@@ -1,4 +1,4 @@
-module utility
+module github.com/byte-power/go-utility
 
 go 1.21
 
