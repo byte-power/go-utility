@@ -179,9 +179,7 @@ func JsonString(k string, v any) LogPair {
 // }
 
 func Error(err error) LogPair {
-	it := LogPair{key: "error"}
-	it.value = err.Error()
-	return it
+	return LogPair{key: "error", value: err}
 }
 
 func Stack(stack []byte) LogPair {
